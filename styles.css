@@ -102,6 +102,7 @@ button:hover {
     background: black;
     color: yellow;
 }
+
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
     height: 100vh;
