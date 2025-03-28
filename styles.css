@@ -166,8 +166,9 @@ button:hover {
 }
 
 .gallery-item img {
-    width: 300px;
-    height: auto;
+    width: 100%; /* Make sure all images scale responsively */
+    height: 350px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images are cropped to fit */
     border-radius: 5px;
 }
 
