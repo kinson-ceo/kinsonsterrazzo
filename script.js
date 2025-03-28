@@ -1,3 +1,7 @@
+const swiperScript = document.createElement("script");
+swiperScript.src = "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js";
+document.head.appendChild(swiperScript);
+
 document.getElementById("quote-form").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("Your quote request has been submitted! We'll get back to you soon.");
