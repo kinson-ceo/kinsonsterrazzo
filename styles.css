@@ -150,6 +150,9 @@ button:hover {
 .gallery h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 1s ease-in-out forwards;
 }
 
 .gallery-container {
@@ -176,12 +179,6 @@ button:hover {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-in-out forwards;
-}
-
-h2 {
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: slideDown 1s ease-in-out forwards;
 }
 
 @keyframes slideDown {
