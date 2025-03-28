@@ -141,3 +141,39 @@ button:hover {
     color: black;
 }
 
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
