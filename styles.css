@@ -1,27 +1,104 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
+
+/* Header */
 header {
-    background-color: #FFD700;
-    padding: 10px;
+    background: black;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
 }
+
+nav {
+    margin-top: 10px;
+}
+
 nav a {
+    color: white;
     margin: 0 15px;
     text-decoration: none;
-    color: black;
     font-weight: bold;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Buttons */
+.btn {
+    background: yellow;
+    color: black;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: yellow;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 input, textarea {
-    margin: 5px 0;
-    padding: 10px;
     width: 80%;
-    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+button {
+    background: yellow;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: black;
+    color: yellow;
 }
