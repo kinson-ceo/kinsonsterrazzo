@@ -3,8 +3,10 @@ document.getElementById("quote-form").addEventListener("submit", function(event)
     alert("Your quote request has been submitted! We'll get back to you soon.");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function() {
     var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
         loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -14,9 +16,5 @@ document.addEventListener("DOMContentLoaded", function () {
             el: ".swiper-pagination",
             clickable: true,
         },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
     });
-});
+};
