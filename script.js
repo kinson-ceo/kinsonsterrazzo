@@ -1,12 +1,14 @@
-document.getElementById("quote-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Your quote request has been submitted! We'll get back to you soon.");
-});
+document.addEventListener("DOMContentLoaded", function () {
+    var quoteForm = document.getElementById("quote-form");
 
-window.onload = function() {
+    if (quoteForm) {
+        quoteForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Your quote request has been submitted! We'll get back to you soon.");
+        });
+    }
+
     var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 1,
-        spaceBetween: 10,
         loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -16,5 +18,9 @@ window.onload = function() {
             el: ".swiper-pagination",
             clickable: true,
         },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
     });
-};
+});
